@@ -4,9 +4,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Example</title>
+    <style>
+        [hp-cloak] {
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <button data-toggle-button>Toggle</button>
+    <div data-disclosure>
+        <button data-disclosure-button>Toggle</button>
+        <div data-disclosure-content hp-cloak>
+            <p>Content</p>
+        </div>
+    </div>
     <script src="./example.ts" type="module"></script>
 </body>
 </html>
